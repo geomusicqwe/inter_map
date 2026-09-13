@@ -61,6 +61,8 @@ const roomConfig = {
     '6400': { number: '203', name: 'Раздевалка', showPanel: true },
     '6433': { number: '202', name: 'Гардеробная', showPanel: true },
     '6429': { number: '201', name: 'Коворкинг', showPanel: true },
+    // 3rdfloor
+    '3562': { number: '301', name: 'ПК Аудитория', showPanel: true },
     // комната ground_1 не показывает панель
     'ground_1': { number: '', name: 'No info', showPanel: false }
 };
