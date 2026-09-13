@@ -40,7 +40,8 @@ const WEEK_SCHEDULE_PAGE_URL = 'week_schedule.html';
 const GROUPS_SCAN_LIMIT = 2000;
 
 // описание кабинетов по идентификаторам в модели
-const roomConfig = {
+const roomConfigFloor2 = {
+    //2ndfloor
     '6419': { number: '', name: 'Пожарная лестница', showPanel: true },
     '6417': { number: 'Ж', name: 'Туалет', showPanel: true },
     '6415': { number: 'М', name: 'Туалет', showPanel: true },
@@ -61,19 +62,19 @@ const roomConfig = {
     '6400': { number: '203', name: 'Раздевалка', showPanel: true },
     '6433': { number: '202', name: 'Гардеробная', showPanel: true },
     '6429': { number: '201', name: 'Коворкинг', showPanel: true },
-    // 3rdfloor
-    '3562': { number: '301', name: 'ПК Аудитория', showPanel: true },
     // комната ground_1 не показывает панель
     'ground_1': { number: '', name: 'No info', showPanel: false }
 };
 
 // Кабинеты третьего этажа. id мешей пока неизвестны — их можно подсмотреть
 // режимом отладки (20 нажатий на этаж 2) и дописать сюда так же, как выше.
-const roomConfigFloor3 = {};
+const roomConfigFloor3 = {
+    '3562': { number: '301', name: 'ПК Аудитория', showPanel: true },
+};
 
 // какой конфиг использовать для какого этажа
 const floorRoomConfigs = {
-    2: roomConfig,
+    2: roomConfigFloor2,
     3: roomConfigFloor3
 };
 
