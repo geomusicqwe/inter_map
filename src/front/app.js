@@ -1294,38 +1294,40 @@ groupConfirmBtn.addEventListener('click', () => {
 // включается двадцатью нажатиями подряд на этаж 2. Столько же нажатий
 // выключает обратно. состояние запоминается в браузере.
 // ---------------------------------------------------------------------------
-const DEBUG_STORAGE_KEY = 'intermap.debug';
-const DEBUG_UNLOCK_TAPS = 20;
 
-let debugTaps = 0;
+document.documentElement.dataset.debug = 'on';
+//c//onst DEBUG_STORAGE_KEY = 'intermap.debug';
+//const DEBUG_UNLOCK_TAPS = 20;
 
-function setDebugMode(enabled) {
-    document.documentElement.dataset.debug = enabled ? 'on' : 'off';
-    try {
-        localStorage.setItem(DEBUG_STORAGE_KEY, enabled ? 'on' : 'off');
-    } catch (error) {
-        // приватный режим — просто не запоминаем
-    }
-    if (clickInfoDiv) {
-        clickInfoDiv.textContent = enabled ? 'Режим отладки включён' : '';
-    }
-}
+//let debugTaps = 0;
 
-floorNumbers.forEach((span) => {
-    span.addEventListener('click', () => {
-        // счётчик считает нажатия подряд: другой этаж сбрасывает его
-        if (span.dataset.floor !== '2') {
-            debugTaps = 0;
-            return;
-        }
+//function setDebugMode(enabled) {
+ //   document.documentElement.dataset.debug = enabled ? 'on' : 'off';
+//    try {
+//        localStorage.setItem(DEBUG_STORAGE_KEY, enabled ? 'on' : 'off');
+//    } catch (error) {
+ //       // приватный режим — просто не запоминаем
+ //   }
+ //   if (clickInfoDiv) {
+ //       clickInfoDiv.textContent = enabled ? 'Режим отладки включён' : '';
+//    }
+//}
 
-        debugTaps += 1;
-        if (debugTaps < DEBUG_UNLOCK_TAPS) return;
-
-        debugTaps = 0;
-        setDebugMode(document.documentElement.dataset.debug !== 'on');
-    });
-});
+//floorNumbers.forEach((span) => {
+ //   span.addEventListener('click', () => {
+ //       // счётчик считает нажатия подряд: другой этаж сбрасывает его
+  //      if (span.dataset.floor !== '2') {
+  //          debugTaps = 0;
+  //          return;
+  //      }
+//
+//        debugTaps += 1;
+ //       if (debugTaps < DEBUG_UNLOCK_TAPS) return;
+//
+//        debugTaps = 0;
+ //       setDebugMode(document.documentElement.dataset.debug !== 'on');
+//    });
+//});
 
 // восстановление режима после перезагрузки
 try {
