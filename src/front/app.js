@@ -69,7 +69,30 @@ const roomConfigFloor2 = {
 // Кабинеты третьего этажа. id мешей пока неизвестны — их можно подсмотреть
 // режимом отладки (20 нажатий на этаж 2) и дописать сюда так же, как выше.
 const roomConfigFloor3 = {
-    '3562': { number: '301', name: 'ПК Аудитория', showPanel: true },
+    '3562': { number: '301', name: 'Аудитория (ПК)', showPanel: true },
+    '3560': { number: '', name: 'Лестничная площадка', showPanel: true },
+    '3564': { number: '302', name: 'Психолог', showPanel: true },
+    '3566': { number: '303', name: 'Класс))', showPanel: true },
+    '3568': { number: '304', name: 'Учительская', showPanel: true },
+    '3570': { number: '305', name: 'Класс))', showPanel: true },
+    '3572': { number: '306', name: 'Класс))', showPanel: true },
+    '3574': { number: '307', name: 'Гардероб', showPanel: true },
+    '3576': { number: '308', name: 'Кибер спорт))', showPanel: true },
+    '3578': { number: '309', name: 'Класс))', showPanel: true },
+    '3580': { number: '310', name: 'Класс))', showPanel: true },
+    '3616': { number: '311', name: 'Класс))', showPanel: true },
+    '3558': { number: '312', name: 'Класс))', showPanel: true },
+    '3556': { number: '313', name: 'Класс))', showPanel: true },
+    '3554': { number: '314', name: 'Зал для конференций', showPanel: true },
+    '3552': { number: '315', name: 'Коворкинг', showPanel: true },
+    '3550': { number: '316', name: 'Класс))', showPanel: true },
+    '3548': { number: '317', name: 'Бухгалтерия/отдел кадров', showPanel: true },
+    '3546': { number: '318', name: 'Директор школы/заместитель', showPanel: true },
+    '3544': { number: '319', name: 'Коворкинг начальной школы', showPanel: true },
+    '3542': { number: 'туалетик', name: 'no info', showPanel: true },
+    '3540': { number: 'туалетик', name: 'no info', showPanel: true },
+    '3538': { number: 'служебная лестница(вроде)', name: 'no info', showPanel: true },
+    '3614': { number: 'секретная будка', name: 'no info', showPanel: true },
 };
 
 // какой конфиг использовать для какого этажа
